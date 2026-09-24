@@ -1,0 +1,8 @@
+{
+  "name": "Badhon Bhowmik Personal Hub",
+  "short_name": "Badhon Hub",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#070713",
+  "theme_color": "#070713"
+}
