@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Badhon Bhowmik — personal portfolio, education, club activities, social links and mini arcade.">
+  <meta name="theme-color" content="#070713">
+  <title>Badhon Bhowmik | Personal Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top"><span class="brand-dot"></span>Badhon<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#clubs">Clubs</a>
+        <a href="#arcade">Arcade</a>
+      </div>
+      <button class="nav-edit" onclick="openEditor()">✦ Edit Info</button>
+    </div>
+  </nav>
+
+  <main id="top" class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>●</span> PERSONAL PORTFOLIO</div>
+        <h1 id="displayName">Badhon Bhowmik</h1>
+        <p class="hero-bio" id="displayBio">Turning ideas into experiences, and dreams into reality</p>
+        <p class="hero-motto" id="displayMotto">Dream. Create. Inspire.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#about">Explore Profile <span>↘</span></a>
+          <button class="btn glass" onclick="openEditor()">Edit My Information</button>
+        </div>
+        <div class="quick-pills">
+          <span>🎓 HSC 2027</span>
+          <span>📍 Notre Dame College, Dhaka</span>
+          <span>🩸 A+</span>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="photo-glow"></div>
+        <div class="hero-photo-card">
+          <img id="profileImage" src="assets/profile.jpg" alt="Badhon Bhowmik profile photo">
+          <div class="photo-caption">
+            <span>HELLO, I'M</span>
+            <strong id="photoName">BADHON BHOWMIK</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>18</strong><span>Years old</span></div>
+      <div><strong>2025</strong><span>SSC Batch</span></div>
+      <div><strong>2027</strong><span>HSC Batch</span></div>
+      <div><strong>A+</strong><span>Blood Group</span></div>
+    </section>
+
+    <section id="about" class="section two-col">
+      <div class="section-heading">
+        <span class="section-kicker">01 — ABOUT ME</span>
+        <h2>A little about <span>myself.</span></h2>
+        <p>Student, creator and club enthusiast — this is my little corner of the internet.</p>
+      </div>
+      <div class="glass-card about-card">
+        <p id="aboutText">My name is Badhon Bhowmik. I am 18 years old boy. I passed my SSC exam from Madhabdi Sati Prasanna Institution. Now, I am reading in HSC at Notre Dame College, Dhaka.</p>
+        <div class="info-grid">
+          <div><span>Nationality</span><strong id="nationality">Bangladeshi</strong></div>
+          <div><span>Blood Group</span><strong id="bloodGroup">A+ 🩸</strong></div>
+          <div><span>Email</span><a id="emailLink" href="mailto:gdbadhonbhowmik@gmail.com">gdbadhonbhowmik@gmail.com</a></div>
+          <div><span>Phone</span><a id="phoneLink" href="tel:+8801749757216">01749757216</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="section-heading centered">
+        <span class="section-kicker">02 — EDUCATION</span>
+        <h2>My academic <span>journey.</span></h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">SSC · 2025</div>
+          <div class="glass-card timeline-card">
+            <h3>Madhabdi Sati Prasanna Institution</h3>
+            <p>Business Studies</p>
+            <span class="status">COMPLETED</span>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-year">HSC · 2027</div>
+          <div class="glass-card timeline-card">
+            <h3>Notre Dame College, Dhaka</h3>
+            <p>Business Studies · Running Batch</p>
+            <span class="status live">CURRENT</span>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-dot muted"></div>
+          <div class="timeline-year">UNIVERSITY</div>
+          <div class="glass-card timeline-card muted-card">
+            <h3 id="universityText">N/A</h3>
+            <p>Future chapter</p>
+            <span class="status">TO BE UPDATED</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="clubs" class="section">
+      <div class="section-heading">
+        <span class="section-kicker">03 — CLUB ACTIVITIES</span>
+        <h2>Where I <span>connect & grow.</span></h2>
+        <p>My club activities, volunteering and student community journey.</p>
+      </div>
+
+      <div class="club-grid">
+        <article class="club-card">
+          <div class="club-logo rotaract"><img src="assets/rotaract.jpg" alt="Notre Dame Rotaract Club logo"></div>
+          <div class="club-meta">
+            <span class="club-tag">CLUB SERVICE</span>
+            <h3>Notre Dame Rotaract Club</h3>
+            <p>Club Service — Not Qualified</p>
+          </div>
+        </article>
+
+        <article class="club-card">
+          <div class="club-logo"><img src="assets/business-club.jpg" alt="Notre Dame Business Club logo"></div>
+          <div class="club-meta">
+            <span class="club-tag certified">CERTIFIED</span>
+            <h3>Notre Dame Business Club</h3>
+            <p>Volunteer</p>
+          </div>
+        </article>
+
+        <article class="club-card">
+          <div class="club-logo"><img src="assets/it-club.jpg" alt="Notre Dame Information Technology Club logo"></div>
+          <div class="club-meta">
+            <span class="club-tag">MEMBER</span>
+            <h3>Notre Dame Information Technology Club</h3>
+            <p>Student Club Activity</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section two-col">
+      <div class="section-heading">
+        <span class="section-kicker">04 — INTERESTS</span>
+        <h2>Things I <span>enjoy.</span></h2>
+      </div>
+      <div class="glass-card interests-card">
+        <div class="interest"><span>⚽</span><div><strong>eFootball</strong><small>Game I play</small></div></div>
+        <div class="interest"><span>🎮</span><div><strong>FC Mobile</strong><small>Game I play</small></div></div>
+        <div class="interest"><span>💡</span><div><strong>Technology</strong><small>Learning & exploring</small></div></div>
+        <div class="interest"><span>🤝</span><div><strong>Club Activities</strong><small>Connect & contribute</small></div></div>
+      </div>
+    </section>
+
+    <section class="section social-section">
+      <div class="section-heading centered">
+        <span class="section-kicker">05 — ONLINE</span>
+        <h2>Find me <span>online.</span></h2>
+      </div>
+      <div class="social-grid">
+        <a id="facebookLink" class="social-card" href="https://www.facebook.com/share/1QQwdDyytH/" target="_blank" rel="noopener"><span>f</span><div><strong>Facebook</strong><small>Connect with me</small></div><b>↗</b></a>
+        <a id="whatsappLink" class="social-card" href="https://wa.me/8801749757216" target="_blank" rel="noopener"><span>◉</span><div><strong>WhatsApp</strong><small>Message me</small></div><b>↗</b></a>
+        <a id="linkedinLink" class="social-card" href="https://www.linkedin.com/in/badhon-bhowmik-21247743a" target="_blank" rel="noopener"><span>in</span><div><strong>LinkedIn</strong><small>Professional profile</small></div><b>↗</b></a>
+        <a id="youtubeLink" class="social-card" href="https://youtube.com/@premikpurush__430" target="_blank" rel="noopener"><span>▶</span><div><strong>YouTube</strong><small>Watch my videos</small></div><b>↗</b></a>
+        <a id="tiktokLink" class="social-card" href="https://www.tiktok.com/@shikha.bhowmik" target="_blank" rel="noopener"><span>♪</span><div><strong>TikTok</strong><small>Short videos</small></div><b>↗</b></a>
+      </div>
+    </section>
+
+    <section id="wall" class="section">
+      <div class="section-heading centered">
+        <span class="section-kicker">06 — VISITOR WALL</span>
+        <h2>Leave a <span>message.</span></h2>
+      </div>
+      <div class="glass-card wall-card">
+        <div class="wall-input-row">
+          <input id="wallInput" type="text" placeholder="Write a message or thought...">
+          <button class="btn primary" onclick="addMessage()">Post</button>
+        </div>
+        <ul id="wallList" class="wall-list"></ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading centered">
+        <span class="section-kicker">07 — GOALS</span>
+        <h2>Keep moving <span>forward.</span></h2>
+      </div>
+      <div class="goal-grid">
+        <div class="glass-card goals-card">
+          <h3>Today's Goals</h3>
+          <label><input type="checkbox" data-goal="water"> Drink 2L Water</label>
+          <label><input type="checkbox" data-goal="reading"> Read for 30 minutes</label>
+          <label><input type="checkbox" data-goal="coding"> Practice Coding</label>
+        </div>
+        <div class="glass-card challenge-card">
+          <h3>30-Day Challenge</h3>
+          <p>Track your daily streak.</p>
+          <div class="challenge-number"><span id="challengeDay">1</span><small>DAY</small></div>
+          <button class="btn primary" onclick="markChallenge()">Mark Today Complete ✓</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="arcade" class="section arcade-section">
+      <div class="section-heading centered">
+        <span class="section-kicker">08 — MINI ARCADE</span>
+        <h2>Play a little <span>game.</span></h2>
+        <p>Fun included — because a personal hub should not be boring.</p>
+      </div>
+      <div class="glass-card arcade-card">
+        <div class="game-tabs">
+          <button class="game-tab-btn active" onclick="switchGame('cricket')">🏏 Cricket</button>
+          <button class="game-tab-btn" onclick="switchGame('penalty')">⚽ Penalty</button>
+          <button class="game-tab-btn" onclick="switchGame('snake')">🐍 Snake</button>
+          <button class="game-tab-btn" onclick="switchGame('carrace')">🏎️ Car Race</button>
+          <button class="game-tab-btn" onclick="switchGame('pong')">🏓 Ping Pong</button>
+        </div>
+
+        <div class="game-display">
+          <div id="game-cricket">
+            <h3>🏏 Cricket Batting Challenge</h3>
+            <p>Click “Hit / Shot!” when the ball gets near the wickets.</p>
+            <canvas id="cricketCanvas" width="300" height="200"></canvas>
+            <div class="score-board">Runs: <b id="cricketScore">0</b> · Out: <b id="cricketWickets">0</b>/3</div>
+            <div class="game-controls"><button class="btn primary" onclick="startCricket()">Bowl Ball 🏏</button><button class="btn glass" onclick="hitCricketBat()">Hit / Shot! 💥</button></div>
+          </div>
+
+          <div id="game-penalty" style="display:none;">
+            <h3>⚽ Penalty Shootout</h3>
+            <p>Pick a direction and try to beat the keeper.</p>
+            <canvas id="penaltyCanvas" width="300" height="200"></canvas>
+            <div class="score-board">Goals: <b id="penaltyScore">0</b></div>
+            <div class="game-controls"><button class="btn glass" onclick="shootPenalty('left')">Shoot Left ↖</button><button class="btn primary" onclick="shootPenalty('center')">Shoot Straight ⬆</button><button class="btn glass" onclick="shootPenalty('right')">Shoot Right ↗</button></div>
+          </div>
+
+          <div id="game-snake" style="display:none;">
+            <h3>🐍 Classic Snake Game</h3>
+            <p>Eat the food and grow. Use the buttons or keyboard arrows.</p>
+            <canvas id="snakeCanvas" width="300" height="200"></canvas>
+            <div class="score-board">Score: <b id="snakeScore">0</b></div>
+            <div class="game-controls">
+              <button class="btn primary" onclick="startSnake()">Start Game 🔄</button><br><br>
+              <button class="control-btn" onclick="changeSnakeDir('UP')">⬆</button><br>
+              <button class="control-btn" onclick="changeSnakeDir('LEFT')">⬅</button>
+              <button class="control-btn" onclick="changeSnakeDir('DOWN')">⬇</button>
+              <button class="control-btn" onclick="changeSnakeDir('RIGHT')">➡</button>
+            </div>
+          </div>
+
+          <div id="game-carrace" style="display:none;">
+            <h3>🏎️ Car Race</h3>
+            <p>Avoid the obstacle and keep the car inside the road.</p>
+            <canvas id="carCanvas" width="300" height="220"></canvas>
+            <div class="score-board">Score: <b id="carScore">0</b></div>
+            <div class="game-controls"><button class="btn primary" onclick="startCarRace()">Start Race 🏁</button><button class="btn glass" onclick="moveCar('LEFT')">⬅</button><button class="btn glass" onclick="moveCar('RIGHT')">➡</button></div>
+          </div>
+
+          <div id="game-pong" style="display:none;">
+            <h3>🏓 Classic Ping Pong</h3>
+            <p>Move your paddle and keep the ball alive.</p>
+            <canvas id="pongCanvas" width="300" height="200"></canvas>
+            <div class="score-board">Score: <b id="pongScore">0</b></div>
+            <div class="game-controls"><button class="btn primary" onclick="startPong()">Start Game ▶</button><button class="btn glass" onclick="movePong('LEFT')">⬅ Left</button><button class="btn glass" onclick="movePong('RIGHT')">Right ➡</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The requested form is available as a link at the very bottom. -->
+    <section class="bottom-update">
+      <a href="#edit" onclick="openEditor(); return false;">📝 Update / Edit My Information</a>
+      <span>Changes are saved on this device.</span>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <strong>Badhon Bhowmik<span>.</span></strong>
+      <p>Dream. Create. Inspire.</p>
+      <small>© <span id="year"></span> Badhon Bhowmik · Personal Hub</small>
+    </div>
+  </footer>
+
+  <!-- EDITOR MODAL -->
+  <div id="editorModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeEditor()"></div>
+    <div class="editor-panel">
+      <div class="editor-header">
+        <div><span class="section-kicker">PERSONAL CMS</span><h2>Update your information</h2></div>
+        <button class="close-btn" onclick="closeEditor()">×</button>
+      </div>
+      <p class="editor-note">Edit the fields below and press Save. The portfolio updates instantly and stores your changes in this browser.</p>
+      <form id="editorForm" class="editor-form" onsubmit="saveProfile(event)">
+        <div><label>Name</label><input id="editName" required></div>
+        <div><label>Nationality</label><input id="editNationality"></div>
+        <div class="full"><label>Bio</label><input id="editBio"></div>
+        <div class="full"><label>Motto</label><input id="editMotto"></div>
+        <div class="full"><label>About / Myself</label><textarea id="editAbout" rows="4"></textarea></div>
+        <div><label>Blood Group</label><input id="editBlood"></div>
+        <div><label>University</label><input id="editUniversity"></div>
+        <div><label>Email</label><input id="editEmail" type="email"></div>
+        <div><label>Phone</label><input id="editPhone"></div>
+        <div><label>Facebook</label><input id="editFacebook"></div>
+        <div><label>WhatsApp</label><input id="editWhatsapp"></div>
+        <div><label>LinkedIn</label><input id="editLinkedin"></div>
+        <div><label>YouTube</label><input id="editYoutube"></div>
+        <div><label>TikTok</label><input id="editTiktok"></div>
+        <div class="full editor-actions">
+          <button class="btn primary" type="submit">Save Changes ✓</button>
+          <button class="btn glass" type="button" onclick="resetProfile()">Reset to Original</button>
+          <button class="btn danger" type="button" onclick="clearSavedData()">Clear Saved Changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
